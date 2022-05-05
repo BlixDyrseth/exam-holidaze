@@ -1,0 +1,15 @@
+.button {
+  background-color: rgb(18, 18, 124);
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  padding: 1.5em 0em 1.5em 0em;
+  font-weight: 500;
+  transition: 0.5s;
+  margin-bottom: 1em;
+}
+
+.button:hover {
+  background-color: rgb(1, 1, 63);
+}
