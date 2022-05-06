@@ -4,10 +4,28 @@ nav {
   height: 75px;
   align-items: center;
   padding: 0em 2em 0em 2em;
+  background-color: aqua;
 }
 
 .searchbar {
   max-width: 460px;
   height: 55px;
   border-radius: 23px;
+}
+
+@media only screen and (min-width: 977px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    padding: 0em 2em 0em 2em;
+    background-color: blue;
+  }
+
+  .searchbar {
+    max-width: 460px;
+    height: 55px;
+    border-radius: 23px;
+  }
 }
