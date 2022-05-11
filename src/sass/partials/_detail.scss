@@ -1,0 +1,39 @@
+.detail-container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.detail-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 4em;
+  margin-top: 2.5em;
+}
+
+.details-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.picture-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.text-container-detail {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.amenities-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}

@@ -1,0 +1,20 @@
+.bottom-nav {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: beige;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-nav-item {
+  padding: 0em 2em 0em 2em;
+}
+
+@media only screen and (min-width: 600px) {
+  .bottom-nav {
+    display: none;
+  }
+}

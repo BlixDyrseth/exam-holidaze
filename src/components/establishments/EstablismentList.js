@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { API } from "../../constants/api/api";
+import Establishments from "./Establishments";
 
 function EstablishmentList() {
-  const [establishments, setEstablishments] = useState([]);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -14,7 +15,7 @@ function EstablishmentList() {
         if (response.ok) {
           const json = await response.json();
           console.log(json);
-          setEstablishments(json);
+          setData(json);
         } else {
           setError("An error occured");
         }
@@ -30,15 +31,16 @@ function EstablishmentList() {
   if (loading) {
     return <div>loading...</div>;
   }
+
   return (
     <div>
-      {establishments.map(function (establishment) {
-        return (
-          <div key={establishment.data.id}>
-            <h1>{establishment.data.name}</h1>
+      {data.map((establishment) => (
+        <div key={establishment.id}>
+          <div>
+            <h2>{establishment.name}</h2>
           </div>
-        );
-      })}
+        </div>
+      ))}
     </div>
   );
 }
