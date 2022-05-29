@@ -1,0 +1,122 @@
+.form-error {
+  color: red;
+  font-size: large;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+}
+
+.form-container {
+  box-shadow: $nav-shadow;
+  border-radius: $primary-radius;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-body {
+  width: 90%;
+}
+
+.form-input,
+.form-textarea {
+  box-shadow: inset $input-shadow;
+  border-radius: $primary-radius;
+  width: 90%;
+  height: 20px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+}
+
+.type-selctor {
+  height: 40px;
+}
+
+.form-textarea {
+  height: 100px;
+  margin-bottom: 1em;
+  font-family: informapro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: inset $input-shadow;
+  border: none;
+}
+
+.guest-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  border-radius: 15px;
+  box-shadow: inset $input-shadow;
+}
+
+select {
+  border: none;
+  height: 40px;
+}
+
+// Filter
+
+.radiobuttons-container {
+  display: flex;
+}
+
+.checkboxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 363px;
+  width: 391px;
+  flex-direction: column;
+  margin-bottom: 1em;
+  align-content: space-between;
+}
+
+// Enquirey form
+
+.datepicker-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.datepicker-container {
+  padding: 1em;
+}
+
+.datepicker {
+  border: none;
+  border-radius: 15px;
+  padding: 1em;
+  box-shadow: inset $input-shadow;
+}
+
+// Login form
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-form-container {
+  width: 100%;
+}
+
+.login-form-inputs {
+  width: 90%;
+  padding-bottom: 1em;
+}

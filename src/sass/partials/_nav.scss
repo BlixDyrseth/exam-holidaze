@@ -8,23 +8,18 @@ nav {
   box-shadow: $nav-shadow;
 }
 
+.active {
+  font-weight: 600;
+}
+
 .logo,
 .login {
   display: none;
 }
 
-.searchbar {
-  width: 250px;
-  height: 45px;
-  border-radius: 23px;
-  padding-left: 1.5em;
-}
-
 @media only screen and (min-width: 850px) {
-  .searchbar {
-    width: 460px;
-    height: 50px;
-    border-radius: 23px;
+  .logo {
+    width: 240px;
   }
 }
 
@@ -36,5 +31,6 @@ nav {
   .logo,
   .login {
     display: block;
+    width: 190px;
   }
 }

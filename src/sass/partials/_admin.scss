@@ -1,0 +1,174 @@
+// Current listings
+
+.current-listing-container,
+.messagelist-container,
+.enquierylist-container {
+  max-width: 700px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2em;
+  padding-top: 1em;
+  border-radius: $primary-radius;
+  box-shadow: $primary-shadow;
+  margin: 2em;
+}
+
+.listing-item,
+.message-item,
+.enquierylist-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 1px $shadow-color;
+  padding-top: 1em;
+  background-color: white;
+}
+
+// Enquiry messages
+
+.enquiery-container,
+.message-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: $primary-radius;
+  box-shadow: $primary-shadow;
+  max-width: 470px;
+}
+
+.person-info-header {
+  background-color: $message-header-color;
+  border-radius: 15px 15px 0px 0px;
+  padding: 2em;
+  padding-top: 1em;
+}
+
+.enquiery-details {
+  padding: 4em;
+  padding-top: 2em;
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+// Messages
+
+.message-details {
+  max-width: 500px;
+  padding: 2em;
+  min-height: 272px;
+}
+
+.message-container {
+  padding: 0em;
+}
+
+// Admin menu
+
+.admin-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+  background-color: $primary-color;
+  color: white;
+  height: 75px;
+  padding-bottom: 1.5em;
+}
+
+.menu-header {
+  color: white;
+  font-size: 27px;
+  padding-left: 0.5em;
+}
+
+.menu-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-item {
+  font-size: 16px;
+  margin-left: 1em;
+}
+
+.message-wrapper {
+  display: flex;
+  max-width: 700px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2em;
+}
+.admin-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1270px) {
+  .admin-container {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  // admin establishment listing
+  .admin-container {
+    justify-content: space-evenly;
+  }
+  // Current listings
+
+  .current-listing-container,
+  .messagelist-container,
+  .enquierylist-container {
+    padding: 2em;
+    width: 700px;
+    margin: auto;
+    margin-top: 1em;
+  }
+
+  .listing-item,
+  .message-item,
+  .enquierylist-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px $shadow-color;
+    padding-top: 1em;
+  }
+
+  // Enquiry messages
+
+  .enquiery-container,
+  .menu-header {
+    font-size: 30px;
+  }
+
+  .message-wrapper {
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2em;
+  }
+
+  // Admin menu
+
+  .menu-item-container {
+    width: 600px;
+  }
+
+  .menu-item {
+    font-size: 18px;
+  }
+}

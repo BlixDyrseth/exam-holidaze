@@ -1,15 +1,70 @@
-.button {
-  background-color: rgb(18, 18, 124);
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.button,
+.login-button {
+  background-color: $secondary-color;
   color: white;
   border-radius: 15px;
   text-align: center;
   width: 200px;
   padding: 1.5em 0em 1.5em 0em;
-  font-weight: 500;
-  transition: 0.5s;
+  font-weight: 600;
+  transition: 0.7s;
   margin-bottom: 1em;
+  font-size: 16px;
 }
 
-.button:hover {
-  background-color: rgb(1, 1, 63);
+.button:hover,
+.login-button:hover,
+.back-button:hover {
+  background-color: #0085a6;
+  text-shadow: 1px 1px $primary-color;
+  box-shadow: inset 2px 2px 10px #009dc4, 2px 3px 6px $shadow-color;
+  transition: 0.5s;
+}
+
+.button:active,
+.login-button:active,
+.back-button:active {
+  background-color: $primary-color;
+}
+
+.login-button {
+  width: 150px;
+  margin-bottom: 0em;
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+// back button
+
+.back-button {
+  background-color: $secondary-color;
+  color: white;
+  font-size: 19px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  transition: 00.7s;
+  margin-right: 1em;
+}
+
+@media only screen and (min-width: 850px) {
+  .back-button {
+    height: 60px;
+    width: 60px;
+  }
+
+  .login-button {
+    padding: 1em 0em 1em 0em;
+    margin-bottom: 0em;
+    font-size: 14px;
+  }
 }

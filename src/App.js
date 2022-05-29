@@ -1,14 +1,17 @@
 import "./css/App.css";
-import Home from "./components/home/Home";
-import Layout from "./components/layout/Layout";
+import Home from "./pages/home/Home";
+import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
+import { AuthProvider } from "./contex/AuthContex";
 
 function App() {
   return (
-    <div className="App">
-      <Layout />
-      <Footer />
-    </div>
+    <AuthProvider>
+      <div className="App">
+        <Nav />
+        <Footer />
+      </div>
+    </AuthProvider>
   );
 }
 

@@ -1,6 +1,29 @@
 .footer {
-  background-color: grey;
+  background-color: $primary-color;
   height: 450px;
   width: 100%;
   margin-top: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-item {
+  color: white;
+  display: none;
+}
+
+.footer-list {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.footer-list-item {
+  padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 850px) {
+  .footer-item {
+    display: block;
+  }
 }

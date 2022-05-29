@@ -2,9 +2,18 @@
 
 $background-color: #fdfbf5;
 $primary-color: #00323f;
+$secondary-color: #006680;
+$message-header-color: #cbd5d8;
 $black: #0d0d0d;
-$shadow-color: #6c685ba1;
+$shadow-color: #837b606d;
+$button-color: #52747c;
 
 // Shadows
 
 $nav-shadow: 0px -9px 50px $shadow-color;
+$primary-shadow: 0px 0px 30px $shadow-color;
+$input-shadow: 2px 1px 5px $shadow-color;
+
+// Border radius
+
+$primary-radius: 15px;

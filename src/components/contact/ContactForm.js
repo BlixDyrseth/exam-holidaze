@@ -1,17 +1,16 @@
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Button } from "react-bootstrap";
+import { useState } from "react";
+import { API_URL } from "../../constants/api/api";
+import axios from "axios";
 
 const schema = yup.object().shape({
-  firstname: yup
+  fullname: yup
     .string()
     .required("Please enter your first name")
     .min(3, "Must be longer than 3 characters"),
-  lastname: yup
-    .string()
-    .required("Please enter your last name")
-    .min(4, "Must be longer than 4 characters"),
+  subject: yup.string().required("Please enter subject"),
   email: yup
     .string()
     .required("Please enter your email adress")
@@ -23,47 +22,92 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
 
-  function onSubmit(data) {
-    console.log(data);
-  }
+  const [submitting, setSubmitting] = useState(false);
+  const [loginError, setLoginError] = useState(null);
 
-  console.log(errors);
+  async function onSubmit({ fullname, email, subject, message }) {
+    setSubmitting(true);
+    setLoginError(null);
+
+    const data = JSON.stringify({
+      fullname: fullname,
+      email: email,
+      subject: subject,
+      message: message,
+    });
+
+    alert("Message sendt!");
+
+    try {
+      const response = await axios.post(API_URL + "/api/messages", {
+        data: {
+          fullname: fullname,
+          email: email,
+          subject: subject,
+          message: message,
+        },
+      });
+      reset();
+    } catch (error) {
+      console.log("error", error);
+      setLoginError(error.toString());
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <p>First Name</p>
-        <input name="firstname" {...register("firstname")} />
-        {errors.firstname && (
-          <span className="form-error">{errors.firstname.message}</span>
-        )}
+      <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
+        <div className="form-body">
+          <p>Full Name</p>
+          <input
+            className="form-input"
+            name="fullname"
+            {...register("fullname")}
+          />
+          {errors.fullname && (
+            <span className="form-error">{errors.fullname.message}</span>
+          )}
 
-        <p>Last Name</p>
-        <input name="lastname" {...register("lastname")} />
-        {errors.lastname && (
-          <span className="form-error">{errors.lastname.message}</span>
-        )}
+          <p>Email</p>
+          <input className="form-input" name="email" {...register("email")} />
+          {errors.email && (
+            <span className="form-error">{errors.email.message}</span>
+          )}
 
-        <p>Subject</p>
-        <select name="subject" {...register("subject")}>
-          <option>Option 1</option>
-          <option>Option 2</option>
-        </select>
+          <p>Subject</p>
+          <input
+            className="form-input"
+            name="subject"
+            {...register("subject")}
+          />
+          {errors.subject && (
+            <span className="form-error">{errors.subject.message}</span>
+          )}
 
-        <p>Message</p>
-        <textarea name="message" {...register("message")} />
-        {errors.message && (
-          <span className="form-error">{errors.message.message}</span>
-        )}
-
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
+          <p>Message</p>
+          <textarea
+            className="form-textarea"
+            placeholder="Type message here!"
+            name="message"
+            {...register("message")}
+          />
+          {errors.message && (
+            <span className="form-error">{errors.message.message}</span>
+          )}
+        </div>
+        <div>
+          <button className="button" type="submit">
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   );
