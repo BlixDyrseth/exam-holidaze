@@ -1,75 +1,92 @@
-Login info!
+<img src="./src/logo/holidaze-logo.png">
 
-email: admin@holidaze.com
-password: Holidaze4Life
+# Project Exam 2 – Holidaze, a htoel booking site
 
-# Getting Started with Create React App
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Tabel of Contents
 
-## Available Scripts
+- [Description](#description)
+- [Built With](#built-with)
+- [Installing](#installing)
+- [Contact](#contact)
+- [License](#license)
+- [Acknowledments](#acknowledgments)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Elements this project had to include:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- a functinal login form
+- Searchbar that returns names of establishments
+- Page with all establibshments results
+- Detail page to establishments
+- Enquiry form on detail page that sends enquiries to admin site
+- Contact form that sends messages to admin site
 
-### `npm test`
+# Admin site
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Enquiries from detail page
+- Messages from contact form
+- Ability to add products
 
-### `npm run build`
+# Bugs and problems
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Can't add products
+- Problem fetching images from API
+- Admin site is accesible even without being JWT token
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Built With
 
-### `npm run eject`
+- [React js](https://reactjs.org/)
+- [Sass](https://sass-lang.com/)
+- [React Hook form](https://react-hook-form.com/)
+- [React Date Picker](https://www.npmjs.com/package/react-datepicker)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Yup](https://www.npmjs.com/package/yup)
+- [Axios](https://axios-http.com/docs/intro)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repo:
 
-## Learn More
+```html
+git clone git@github.com:BlixDyrseth/exam-holidaze.git
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install the dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```html
+npm install
+```
 
-### Code Splitting
+## Running
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run the app, run the following commands:
 
-### Analyzing the Bundle Size
+```html
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### User credentials for login
 
-### Making a Progressive Web App
+- Username/email: admin@holidaze.com
+- Password: Holidaze4Life
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contact me here:
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledments
