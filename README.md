@@ -32,11 +32,11 @@ Elements this project had to include:
 - Messages from contact form
 - Ability to add products
 
-# Bugs and problems
+### Bugs and problems
 
 - Can't add products
 - Problem fetching images from API
-- Admin site is accesible even without being JWT token
+- Admin site is accesible without using JWT token
 
 ---
 
@@ -50,7 +50,6 @@ Elements this project had to include:
 - [Yup](https://www.npmjs.com/package/yup)
 - [Axios](https://axios-http.com/docs/intro)
 
----
 
 ## How to use
 
@@ -81,12 +80,12 @@ npm start
 - Username/email: admin@holidaze.com
 - Password: Holidaze4Life
 
----
+
 
 ## Contact
 
 Contact me here:
 
----
+
 
 ## Acknowledments
