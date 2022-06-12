@@ -1,6 +1,6 @@
 <img src="./src/logo/holidaze-logo.png">
 
-# Project Exam 2 – Holidaze, a htoel booking site
+# Project Exam 2 – Holidaze, a hotel booking site
 
 ---
 
