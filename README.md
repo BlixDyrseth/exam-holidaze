@@ -86,7 +86,7 @@ npm start
 
 ## Contact
 
-Contact me here:
+Contact me here: [Linkedin](https://www.linkedin.com/in/ingrid-blix-dyrseth-096b2a241/) :envelope:
 
 
 
