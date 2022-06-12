@@ -68,7 +68,7 @@ git clone git@github.com:BlixDyrseth/exam-holidaze.git
 npm install
 ```
 
-## Running
+### Running
 
 To run the app, run the following commands:
 
