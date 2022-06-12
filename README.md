@@ -1,8 +1,8 @@
+# Project Exam 2 
+
 <img src="./src/logo/holidaze-logo.png">
 
-# Project Exam 2 – Holidaze, a hotel booking site
-
-
+Holidaze, a hotel booking site
 
 ### Tabel of Contents
 
@@ -66,7 +66,7 @@ git clone git@github.com:BlixDyrseth/exam-holidaze.git
 2. Install the dependencies:
 
 ```html
-npm install
+npm install 
 ```
 
 ### Running
