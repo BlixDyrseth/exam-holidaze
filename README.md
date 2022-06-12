@@ -42,6 +42,7 @@ Elements this project had to include:
 
 ## Built With
 
+- [npm](https://www.npmjs.com/) 
 - [React js](https://reactjs.org/)
 - [Sass](https://sass-lang.com/)
 - [React Hook form](https://react-hook-form.com/)
