@@ -90,3 +90,21 @@ Contact me here:
 
 
 ## Acknowledments
+
+### Pictures 
+- [Unsplash](https://unsplash.com/)
+
+### Resources and tutorials
+
+
+- [Strapi Crash Course (with React & GraphQL) #6 - Fetching Strapi Data by The Net Ninja](https://www.youtube.com/watch?v=cOE_hF2xjpM) 
+--Found extra help in the comment by Mukul Kashyap under this video!
+- [Local Storage in React by ROBIN WIERUCH](https://www.robinwieruch.de/local-storage-react/)
+- [How to Use localStorage with React Hooks to Set and Get Items by Joel Olawanle](https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/) 
+- [How to create a Modal Component in React from basic to advanced? by Thi Tran](https://medium.com/tinyso/how-to-create-a-modal-component-in-react-from-basic-to-advanced-a3357a2a716a) 
+- [How to Create a Modal in React by Francisco Mendes](https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc) 
+- [React Tutorial – How to Work with Multiple Checkboxes by Yogesh Chavan](https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/)
+- [How to Get Selected Value from a Mapped Select Input in React by Gaurav Singhal](https://www.pluralsight.com/guides/how-to-get-selected-value-from-a-mapped-select-input-in-react)
+- [ReactJS useNavigate() Hook](https://www.geeksforgeeks.org/reactjs-usenavigate-hook/)
+- [React DatePicker with React Hook Form and Typescript by React Code and More](https://www.youtube.com/watch?v=juQI9Se-9d8&t=0s) 
+
