@@ -17,6 +17,8 @@ Holidaze, a hotel booking site
 
 ## Description
 
+Holidaze is a fictional hotel booking website based in Bergen, Norway.
+
 Elements this project had to include:
 
 - a functinal login form
