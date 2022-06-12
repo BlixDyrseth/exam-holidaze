@@ -2,7 +2,7 @@
 
 # Project Exam 2 – Holidaze, a hotel booking site
 
----
+
 
 ### Tabel of Contents
 
@@ -13,7 +13,7 @@
 - [License](#license)
 - [Acknowledments](#acknowledgments)
 
----
+
 
 ## Description
 
@@ -38,7 +38,7 @@ Elements this project had to include:
 - Problem fetching images from API
 - Admin site is accesible without using JWT token
 
----
+
 
 ## Built With
 
