@@ -46,6 +46,7 @@ Elements this project had to include:
 - [React js](https://reactjs.org/)
 - [Sass](https://sass-lang.com/)
 - [React Hook form](https://react-hook-form.com/)
+- [React Router](https://reactrouter.com/docs/en/v6)
 - [React Date Picker](https://www.npmjs.com/package/react-datepicker)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Yup](https://www.npmjs.com/package/yup)
